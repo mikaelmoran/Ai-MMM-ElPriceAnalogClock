@@ -1,0 +1,47 @@
+.elpris-container {
+  margin: 0 auto;
+  position: relative;
+}
+
+.gradient-ring {
+  /* Storlek, padding och bakgrund sätts i JS via getDom */
+}
+
+.clock-face {
+  position: relative;
+  width:  100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+
+  /* FLEX‑centrering av allt innehåll */
+  display:        flex !important;
+  align-items:    center !important;
+  justify-content: center !important;
+}
+
+.clock-number {
+  position: absolute;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+.hour-marker {
+  /* Blink‑markör, oförändrat */
+}
+
+@keyframes blink {
+  0%,100% { opacity: 1; }
+  50%     { opacity: 0.2; }
+}
+
+.price-text {
+  /* Inga inline‑stilar kvar – flex centrerar */
+  position: static !important;
+  transform: none   !important;
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.2;
+}
